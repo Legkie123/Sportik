@@ -52,7 +52,7 @@ export class App extends Component {
                             {/* cart  */}
                             <Route path="/cartproducts" component={() => <Cart user={this.state.user} />} />
                             {/* add goods */}
-                            <Route path="/Z2QyQ2eBfPA" component={AddendumGoods} />
+                            <Route path="/z2qyq2ebfpa" component={AddendumGoods} />
                             {/* order */}
                             <Route path='/order' component={() => <Order user={this.state.user} />} />
                             <Route component={Link} />
