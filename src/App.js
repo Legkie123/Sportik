@@ -14,8 +14,7 @@ import { Order } from './Components/Order'
 export class App extends Component {
 
     state = {
-        user: null,
-        isAdmin:false,
+        user: null
     }
 
     componentDidMount() {
@@ -28,8 +27,7 @@ export class App extends Component {
                 .get()
                 .then(snapshot => {
                     this.setState({
-                        user: snapshot.data().Name,
-                        isAdmin: snapshot.data().isAdmin ? true : false,
+                        user: snapshot.data().Name
                     })
                 })
             }
