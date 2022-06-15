@@ -11,7 +11,7 @@ export const Order = (props) => {
 
     const {  fullPriceTag, fullAmount, dispatch } = useContext(CartContext);
 
-    // defining state
+    
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');

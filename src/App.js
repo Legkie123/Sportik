@@ -15,6 +15,7 @@ export class App extends Component {
 
     state = {
         user: null,
+        isAdmin:false,
     }
 
     componentDidMount() {
@@ -22,9 +23,13 @@ export class App extends Component {
         // getting user info for navigation bar
         auth.onAuthStateChanged(user => {
             if (user) {
-                db.collection('SignedUpUsersData').doc(user.uid).get().then(snapshot => {
+                db.collection('SignedUpUsersData')
+                .doc(user.uid)
+                .get()
+                .then(snapshot => {
                     this.setState({
-                        user: snapshot.data().Name
+                        user: snapshot.data().Name,
+                        isAdmin: snapshot.data().isAdmin ? true : false,
                     })
                 })
             }

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../Global/ProductsContext'
 import { CartContext } from '../Global/CartContext'
+import Spinner from '../images/Spinner.svg'
 
 export const Goods = () => {
 
@@ -12,7 +13,7 @@ export const Goods = () => {
         <>
             {products.length !== 0 && <div className='Googs text-uppercase'><h2>Товары</h2> </div>}
             <div className='casket'>
-                {products.length === 0 && <div>Медленный интернет... нет продуктов для отображения</div>}
+                {products.length === 0 && <div className='wait'>Подождите пожалуйста <img className='Spinner' src={Spinner} alt="Spinner"/></div>}
                 {products.map(product => (
                     <div className='goods-map' key={product.ProductID}>
                         <div className='product-img'>

@@ -31,7 +31,7 @@ export const Cart = ({ user }) => {
                 <div className='cart-container'>
                     {
                         basket.length === 0 && <>
-                            <div>В вашей корзине нет товаров или медленный интернет вызывает проблемы (обновите страницу)</div>
+                            <div>В вашей корзине нет товаров </div>
                             <div><Link to="/">Вернуться на главную страницу</Link></div>
                         </>
                     }

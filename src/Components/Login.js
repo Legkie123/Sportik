@@ -20,18 +20,21 @@ export const Login = (props) => {
 
     return (
         <div className='container'>
-            
+            <div className='text-uppercase Reg'>
+            <h2 >Sportik</h2>
+            <p >Магазин спортивных товаров</p>
+            </div>
             <br />
             <h2 className='text-uppercase'>Вход</h2>
             <br />
             <form autoComplete="off" className='form-group' onSubmit={login}>
                 <label htmlFor="email">Email</label>
                 <input type="email" className='form-control' required
-                    onChange={(e) => setEmail(e.target.value)} value={email} />
+                    onChange={(e) => setEmail(e.target.value)} value={email} placeholder='Введите свой Email'/>
                 <br />
                 <label htmlFor="password">Пароль</label>
                 <input type="password" className='form-control' required
-                    onChange={(e) => setPassword(e.target.value)} value={password} />
+                    onChange={(e) => setPassword(e.target.value)} value={password}  placeholder='Введите свой пароль'/>
                 <br />
                 <button type="submit" className='btn-site'>Вход</button>
             </form>

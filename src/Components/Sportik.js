@@ -7,12 +7,12 @@ import {basket} from 'react-icons-kit/ikons/basket'
 import { useHistory } from 'react-router-dom'
 import { CartContext } from '../Global/CartContext'
 
-export const Sportik = ({ user }) => {
+export const Sportik = ({ user,isAdmin}) => {
 
     const history = useHistory();
     const {fullAmount} = useContext(CartContext);
 
-    // handle logout
+    
     const handleLogout = () => {
         auth.signOut().then(() => {
             history.push('/login');
@@ -27,8 +27,10 @@ export const Sportik = ({ user }) => {
                <Link to ="/"><img src={logo} alt="logo" /></Link> 
             </div>
             <div className='NickName text-uppercase'>
+                
             <h2>Sportik</h2>
             <p className="shop">Магазин спортивных товаров</p>
+           
             </div>
             {!user && <div className='right'>
                 <span><Link to="signup" className='link'>Регистрация</Link></span>
@@ -39,7 +41,15 @@ export const Sportik = ({ user }) => {
                 <span><Link to="cartproducts" className='link'><Icon icon={basket} /></Link></span>
                 <span className='nogoods'>{fullAmount}</span>
                 <span><button className='log-btn' onClick={handleLogout}>Выйти</button></span>
+                
             </div>}
+            
+           
+            {isAdmin && 
+                        <div>
+                            <Link to="z2qyq2ebfpa">Добавление товара</Link>
+                        </div>
+                    }
         </div>
     )
 }

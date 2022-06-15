@@ -11,7 +11,7 @@
 }
 
 .error-msg {
-    color: red;
+    color: #cf2020;
     font-size: 12px;
     font-weight: 600;
 }
@@ -110,6 +110,9 @@ body {
     font-size: 15px;
     border-radius: 8px;
 }
+.Reg{
+    margin: 0px 0px 0px 470px ;
+}
 
 .header .right .nogoods {
     background: #cf2020;
@@ -137,7 +140,7 @@ body {
     cursor: pointer;
     outline: none;
     border: hidden;
-    background-color: #03a1eb;
+    background-color: #3694eb;
     margin-left: 20px;
 
 }
@@ -155,7 +158,57 @@ h1 {
         padding: 10px;
     }
 }
+.Spinner{
+    width: 10%;
+    height: 10%;
+    
+  }
+.wait{
+    margin: 0px 0px 0px 360px;
+}
+  
+  
  
+.Footer{
+    background-color: #083cccaf;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.vk{
+    width: 40px;
+    height: 40px;
+    margin:  0px 0px -15px 0px;
+
+    
+}
+.inst{
+    width: 40px;
+    height: 40px;
+    margin:  0px 0px -15px 0px;
+    
+}
+.mail{
+    width: 40px;
+    height: 40px;
+    margin:  0px 0px -15px -10px;   
+}
+.textfoot
+{
+    margin:  10px 0px 0px 0px;
+}
+.textfootmail{
+    margin:  10px 0px 0px -20px;
+}
+.Footer .sport
+{
+    text-decoration: none;
+    color: #cf2020;
+}
+
+
 .casket {
     display: flex;
     justify-content: center;
@@ -207,7 +260,7 @@ h1 {
 .casket .goods-map .product-name {
     display: block;
     width: 100%;
-    color: #430ed3da;
+    color: #083cccaf;
     margin-top: 10px;
     font-size: 115%;
 }
@@ -217,9 +270,12 @@ h1 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.container-fluid{
+    cursor: pointer;
+}
 
 .casket .goods-map .addcart-btn {
-    background-color: #24b3f5;
+    background-color: #3694eb;
     color: #fff;
     border: hidden;
     cursor: pointer;
@@ -316,7 +372,7 @@ h1 {
     border: hidden;
     outline: none;
     cursor: pointer;
-    color: red;
+    color: #cf2020;
 }
 
 .inc,
@@ -345,7 +401,7 @@ h1 {
 }
 
 .cart-summary .cart-summary-heading {
-    border-bottom: 1px solid #24b3f5;
+    border-bottom: 1px solid #3694eb;
 }
 
 .cart-summary .cart-summary-price {
@@ -377,3 +433,7 @@ h1 {
 .success-msg .home-link {
     color: #fff;
 }
+
+  
+  
+  
