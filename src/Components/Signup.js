@@ -53,9 +53,13 @@ export const Signup = (props) => {
                 <button type="submit" className='btn-site'>Зарегестрироваться</button>
             </form>
             {error && <span className='error-msg'>{error}</span>}
-            <br />
+            
             <span>
                 <Link to="login">Вход</Link>
+            </span>
+            <br />
+            <span>
+                <Link to="/">Главная страница</Link>
             </span>
         </div>
     )

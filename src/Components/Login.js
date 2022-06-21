@@ -39,10 +39,14 @@ export const Login = (props) => {
                 <button type="submit" className='btn-site'>Вход</button>
             </form>
             {error && <span className='error-msg'>{error}</span>}
-            <br/>
+            <br />
             <div className='reg'>
             <span>
                 <Link to="signup"> Регистрация</Link>
+            </span>
+            <br />
+            <span>
+                <Link to="/">Главная страница</Link>
             </span>
             </div>
         </div>
